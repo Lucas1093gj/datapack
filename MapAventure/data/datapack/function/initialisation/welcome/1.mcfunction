@@ -1,0 +1,1 @@
+title @a[tag=player] title {"text":"Bienvenue sur le serveur !","color":"green"}
