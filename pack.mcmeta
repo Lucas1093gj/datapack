@@ -2,9 +2,9 @@
   "pack": {
     "description": "Pack réaliser par la Pourpre Team ;D",
     "min_format": [
-      94,
+      48,,
       1
     ],
-    "max_format": 94
+    "max_format": 48,
   }
 }
