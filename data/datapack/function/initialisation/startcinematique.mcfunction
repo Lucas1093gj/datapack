@@ -1,7 +1,7 @@
 summon armor_stand 135 -21 249 {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["FirstAnimation"]} 
 tp @e[tag=FirstAnimation] 135 -21 249 facing -117 1 13
 
-spectate @e[tag=FirstAnimation,limit=1]
+execute as @a[tag=startcinematique] run spectate @e[tag=FirstAnimation,limit=1]
 
 time set night
 
@@ -21,6 +21,3 @@ schedule function datapack:initialisation/cinematique/4cinematique 30s
 schedule function datapack:initialisation/cinematiquetitle/4title 30s
 
 schedule function datapack:initialisation/endcinematique 38s
-
-
-
