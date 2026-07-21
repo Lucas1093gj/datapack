@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Ceci est la description du datapack (interne)",
+    "min_format": [
+      94,
+      1
+    ],
+    "max_format": 94
+  }
+}
