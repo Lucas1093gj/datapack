@@ -1,4 +1,4 @@
-execute as @e[tag=boby] run kill @s
+execute as @e[tag=Boby] run kill @s
 
 clone -37 1 160 -21 18 174 -97 0 51
 setworldspawn -108 0 58 180 0
