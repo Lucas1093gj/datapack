@@ -8,10 +8,8 @@ schedule clear datapack:initialisation/cinematique/3cinematique_loop
 schedule clear datapack:initialisation/cinematique/4cinematique
 schedule clear datapack:initialisation/cinematique/4cinematique_loop
 
-execute as @a[tag=startcinematique] run {
-    gamemode adventure @s
-    tp @s -108 1 58 180 0
-    tag @s remove startcinematique
-}
+execute as @a[tag=startcinematique] run gamemode adventure @s
+execute as @a[tag=startcinematique] run tp @s -108 1 58 180 0
+execute as @a[tag=startcinematique] run tag @s remove startcinematique
 
 kill @e[tag=FirstAnimation]
