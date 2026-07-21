@@ -1,4 +1,4 @@
-execute as @a[tag=player,tag=!dev] run tag @s add startCinematique
-execute as @a[tag=startCinematique,tag=player,tag=!dev] run gamemode spectator @s
+tag @s add startCinematique
+gamemode spectator @s
 
-function datapack:initialisation/startcinematique
+execute at @s run function datapack:initialisation/startcinematique
