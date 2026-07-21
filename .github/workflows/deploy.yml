@@ -1,0 +1,17 @@
+name: Deploy to Minecraft Server
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Copier les fichiers vers le serveur Minecraft
+        run: |
+          rsync -av --exclude='.git*' --exclude='.github*' ./ "/DATA/AppData/crafty/servers/657c574d-5d24-4d09-8aee-d10c0a67bedc/world/datapacks"
