@@ -1,4 +1,6 @@
-summon armor_stand 135 -21 249 {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["FirstAnimation"]} 
+
+summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["FirstAnimation"]}
+
 tp @e[tag=FirstAnimation] 135 -21 249 facing -117 1 13
 
 execute as @a[tag=startcinematique] run spectate @e[tag=FirstAnimation,limit=1]
