@@ -1,5 +1,6 @@
 
 forceload add 135 249
+
 summon armor_stand 135 -21 249 {Invisible:1b,NoGravity:1b,Tags:["firstanimation"]}
 
 tp @e[tag=firstanimation] -132 6 51 facing -117 1 13
@@ -23,4 +24,4 @@ schedule function datapack:initialisation/cinematiquetitle/3title 20s
 schedule function datapack:initialisation/cinematique/4cinematique 30s
 schedule function datapack:initialisation/cinematiquetitle/4title 30s
 
-schedule function datapack:initialisation/endcinematique 38s
+schedule function datapack:initialisation/endcinematique 40s
