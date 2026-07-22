@@ -14,4 +14,4 @@ jobs:
 
       - name: Copier les fichiers vers le serveur Minecraft
         run: |
-          rsync -av --exclude='.git*' --exclude='.github*' ./ "/DATA/AppData/crafty/servers/657c574d-5d24-4d09-8aee-d10c0a67bedc/world/datapacks/MapAventure"
+          rsync -av --exclude='.git*' --exclude='.github*' ./ "/DATA/AppData/crafty/servers/f9805209-174c-4e1a-b8c5-64a6c491d727/world/datapacks/MapAventure"
