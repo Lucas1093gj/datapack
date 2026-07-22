@@ -1,12 +1,13 @@
 
-summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,Tags:["firstanimation"]}
+summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["firstanimation"]}
 
 tp @e[tag=firstanimation] 135 -21 249 facing -117 1 13
 
+execute as @a[tag=startcinematique] run spectate @e[tag=firstanimation,limit=1]
+
 time set night
 
-execute as @a[tag=startcinematique] at @s run spectate @e[tag=firstanimation,limit=1]
-execute as @a[tag=startcinematique] at @s run stopsound @s music
+execute as @a[tag=startcinematique] run stopsound @s music
 execute as @a[tag=startcinematique] at @s run playsound minecraft:presentation.musique master @s ~ ~ ~
 
 schedule function datapack:initialisation/cinematique/1cinematique_loop 1t
