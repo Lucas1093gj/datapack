@@ -1,4 +1,4 @@
-tellraw @a[tag=player] {"text":"Vos item on été placer dans le coffre de récuperation !"}
+tellraw @a[tag=player] {"text":"Vos items on été placer dans le coffre de récuperation !"}
 
 function datapack:recovery/particle
 
