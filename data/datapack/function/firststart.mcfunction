@@ -15,6 +15,7 @@ gamerule show_advancement_messages false
 gamerule raids false 
 gamerule command_block_output false 
 gamerule pvp false 
+gamerule natural_health_regeneration false
 
 gamerule respawn_radius 0
 
