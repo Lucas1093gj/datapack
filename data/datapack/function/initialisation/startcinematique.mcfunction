@@ -1,5 +1,5 @@
 
-summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["firstanimation"]}
+summon armor_stand 135 -21 249 {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["firstanimation"]}
 
 tp @e[tag=firstanimation] 135 -21 249 facing -117 1 13
 
