@@ -1,0 +1,1 @@
+schedule clear datapack:recovery/particle
