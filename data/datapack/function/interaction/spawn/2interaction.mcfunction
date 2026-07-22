@@ -7,4 +7,4 @@ execute if score #etape dialogue matches 4 run tellraw @a {"text":"§a[Boby]§f 
 
 scoreboard players add #etape dialogue 1
 
-execute if score #etape dialogue matches ..4 run schedule function datapack:interaction/spawn/firstinteraction_spawn 60t
+execute if score #etape dialogue matches ..4 run schedule function datapack:interaction/spawn/firstinteraction_spawn 90t
