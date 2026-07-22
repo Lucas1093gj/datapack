@@ -1,7 +1,5 @@
 execute as @e[tag=Boby] run kill @s
 
-fill -121 -3 44 -116 3 50 air
-
 #initialisation maison de base
 
 execute if score #etape starthouse matches 0 run fill -97 0 51 -81 17 65 air
