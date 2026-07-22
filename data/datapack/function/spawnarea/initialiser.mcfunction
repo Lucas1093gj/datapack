@@ -5,7 +5,7 @@ fill -121 -3 44 -116 3 50 air
 #initialisation maison de base
 
 execute if score #etape starthouse matches 0 run fill -97 0 51 -81 17 65 air
-execute if score #etape starthouse matches 0 run clone -213 1 155 -208 6 161 -97 0 51
+execute if score #etape starthouse matches 0 run clone -37 1 160 -21 18 174 -97 0 51
 
 #on rajoute 1 pour éviter une régéneration a chaque fois
 execute if score #etape starthouse matches 0 run scoreboard players add #etape starthouse 1
@@ -16,7 +16,7 @@ execute if score #etape starthouse matches 0 run scoreboard players add #etape s
 
 # -- structure broken --
 execute if score #etape fishing matches 0 run fill -121 -3 44 -116 3 50 air
-execute if score #etape fishing matches 0 run clone -37 1 160 -21 18 174 -121 -3 44
+execute if score #etape fishing matches 0 run clone -213 1 155 -208 6 161 -121 -3 44
 # -- structure en etat --
 execute if score #etape fishing matches 1 run fill -121 -3 44 -116 3 50 air
 execute if score #etape fishing matches 1 run clone -212 0 169 -207 6 175 -121 -3 44
