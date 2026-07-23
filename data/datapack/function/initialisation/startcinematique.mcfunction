@@ -8,7 +8,7 @@ execute as @a[tag=startcinematique] run spectate @e[tag=firstanimation,limit=1]
 
 time set night
 
-execute as @a[tag=startcinematique] run playsound minecraft:presentation.musique master @s ~ ~ ~ 15
+execute as @a[tag=startcinematique] at @s run playsound minecraft:presentation.musique master @s ~ ~ ~ 1 1 1
 
 schedule function datapack:initialisation/cinematique/1cinematique_loop 1t
 schedule function datapack:initialisation/cinematiquetitle/1title 2s
