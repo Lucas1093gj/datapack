@@ -9,9 +9,8 @@ execute as @a[tag=startcinematique] run spectate @e[tag=firstanimation,limit=1]
 time set night
 
 
-schedule function datapack:initialisation/playmusic 1s
-
 schedule function datapack:initialisation/cinematique/1cinematique_loop 1t
+schedule function datapack:initialisation/playmusic 1s
 schedule function datapack:initialisation/cinematiquetitle/1title 2s
 
 schedule function datapack:initialisation/cinematique/2cinematique 10s
@@ -25,4 +24,3 @@ schedule function datapack:initialisation/cinematiquetitle/4title 30s
 
 schedule function datapack:initialisation/endcinematique 40s
 
-#test
