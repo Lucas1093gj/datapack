@@ -11,5 +11,5 @@ execute if data block -143 -7 75 Items[0] unless data block -110 2 67 Items[0] r
 
 
 #heal dans la maison
-execute as @a[tag=player,x=-92,y=0,z=55,dx=5,dy=12,dz=6] run effect give @s regeneration 1 2 true
+execute as @a[tag=player,x=-92,y=0,z=55,dx=5,dy=12,dz=6] run effect give @s regeneration 15 2 true
 execute as @a[tag=player] run effect give @s saturation 1 2 true
