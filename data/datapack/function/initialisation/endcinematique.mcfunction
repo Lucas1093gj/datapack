@@ -1,4 +1,4 @@
-stopsound @a[tag=startcinematique] master minecraft:presentation.musique
+stopsound @a[tag=startcinematique] player minecraft:presentation.musique
 
 schedule clear datapack:initialisation/cinematique/1cinematique_loop
 schedule clear datapack:initialisation/cinematique/2cinematique
@@ -14,8 +14,7 @@ execute as @a[tag=startcinematique] run tag @s add endcinematique
 execute as @a[tag=startcinematique] run tag @s remove startcinematique
 
 kill @e[tag=firstanimation]
+forceload remove 135 249
 
-scoreboard players set #etape dialogue 0
-
-
-schedule function datapack:interaction/spawn/firstinteraction_spawn 3s
+# on ne lance le dialogue que s'il n'a jamais commencé (un 2e joueur qui finit sa cinématique ne doit pas le relancer)
+execute if score #etape dialogue matches 0 run schedule function datapack:interaction/spawn/firstinteraction_spawn 3s
