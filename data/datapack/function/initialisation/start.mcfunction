@@ -4,3 +4,4 @@ execute as @a[tag=startcinematique,gamemode=adventure] run stopsound @s music
 gamemode spectator @s
 
 execute at @s run function datapack:initialisation/startcinematique
+playsound minecraft:presentation.musique player @s ~ ~ ~

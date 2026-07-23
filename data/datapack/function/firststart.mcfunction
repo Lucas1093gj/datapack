@@ -52,3 +52,5 @@ schedule clear datapack:interaction/spawn/firstinteraction_spawn
 schedule clear datapack:interaction/spawn/2interaction
 schedule clear datapack:recovery/particle
 schedule clear datapack:recovery/clear_particle
+
+stopsound @a[tag=startcinematique] player minecraft:presentation.musique
