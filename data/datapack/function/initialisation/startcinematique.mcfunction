@@ -1,8 +1,6 @@
-
-forceload add 135 249
-
+#on summon la camera directement a sa position de depart, la zone est toujours chargée
 kill @e[tag=firstanimation]
-summon armor_stand 135 -21 249 {Invisible:1b,NoGravity:1b,Tags:["firstanimation"]}
+summon armor_stand -132 6 51 {Invisible:1b,NoGravity:1b,Tags:["firstanimation"]}
 
 tp @e[tag=firstanimation,limit=1] -132 6 51 facing -117 1 13
 
