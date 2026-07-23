@@ -1,9 +1,10 @@
 
 forceload add 135 249
 
+kill @e[tag=firstanimation]
 summon armor_stand 135 -21 249 {Invisible:1b,NoGravity:1b,Tags:["firstanimation"]}
 
-tp @e[tag=firstanimation] -132 6 51 facing -117 1 13
+tp @e[tag=firstanimation,limit=1] -132 6 51 facing -117 1 13
 
 execute as @a[tag=startcinematique] run spectate @e[tag=firstanimation,limit=1]
 
