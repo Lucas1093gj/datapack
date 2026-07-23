@@ -3,10 +3,10 @@ execute as @a[tag=player,tag=!dev,tag=!startcinematique] run gamemode adventure 
 execute as @a[gamemode=adventure,x=-110,y=0,z=56,dx=4,dy=4,dz=4,tag=player,tag=!dev,tag=!startcinematique,tag=!endcinematique] run function datapack:initialisation/start
 execute as @a[tag=startcinematique] run spectate @e[tag=firstanimation,limit=1]
 
-# rattrapage : joueur encore tagué startcinematique alors que la cinématique n'existe plus (reload en pleine cinématique)
+#si un joueur est bloqué en cinematique sans armor stand on le libere
 execute if entity @a[tag=startcinematique] unless entity @e[tag=firstanimation] run function datapack:initialisation/endcinematique
 
-#recovery chest : transfert uniquement quand le tampon contient des items et que le coffre de récupération est vide
+#recovery chest
 execute if data block -143 -7 75 Items[0] unless data block -110 2 67 Items[0] run function datapack:recovery/transfer
 
 

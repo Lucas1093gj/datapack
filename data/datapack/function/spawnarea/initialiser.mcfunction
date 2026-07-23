@@ -22,7 +22,7 @@ execute if score #etape fishing matches 1 run summon villager -115 1 51 {Village
 setworldspawn -108 1 58 180 0
 summon villager -94 1 60 {Rotation:[95.0f,0.0f],VillagerData:{type:plains,profession:mason,level:99},Offers:{Recipes:[{maxUses:100000000,buy:{id:rotten_flesh,count:32},sell:{id:gold_ingot,count:1}}]},CustomName:[Boby],CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Tags:["Boby"]}
 
-#uniquement au tout premier lancement : tp des joueurs au spawn et nettoyage des items au sol
+#tp des joueurs au spawn et clear des items seulement au premier lancement
 execute if score #etape starthouse matches 0 as @a[tag=player,tag=!dev] at @s run tp @s -108 1 58 180 0
 execute if score #etape starthouse matches 0 run kill @e[type=item]
 
@@ -31,5 +31,5 @@ execute if score #etape starthouse matches 0 run kill @e[type=item]
 kill @e[tag=texte_start,type=text_display]
 summon text_display -109 3 49 {Tags:["texte_start"],text:'§eMettez la musique du jeu',billboard:"center"}
 
-#on passe starthouse a 1 pour éviter une régéneration a chaque fois (doit rester la dernière commande)
+#on rajoute 1 pour éviter une régéneration a chaque fois
 execute if score #etape starthouse matches 0 run scoreboard players add #etape starthouse 1

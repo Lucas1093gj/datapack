@@ -1,9 +1,15 @@
-# RESET COMPLET du jeu — déclenché par command block, pas au chargement
+#reset complet du jeu, a lancer depuis un command block
+
 scoreboard players set #etape dialogue 0
 scoreboard players set #etape fishing 0
 scoreboard players set #etape starthouse 0
 scoreboard players set #etape seconddialogue 0
 scoreboard players set #etape startchest 0
+
+#reset des tags des joueurs (sauf les dev)
+tag @a[tag=!dev] remove startcinematique
+tag @a[tag=!dev] remove endcinematique
+tag @a[tag=!dev] remove player
 
 schedule function datapack:spawnarea/initialiser 1t
 
@@ -26,7 +32,7 @@ gamerule respawn_radius 0
 # -- reset hopper boite au lettre --
 clone -126 -9 75 -122 -9 75 -132 -9 75
 
-# -- on tue les séquences en cours de la partie précédente --
+#on stop les sequences de la partie d'avant
 kill @e[tag=firstanimation]
 
 schedule clear datapack:initialisation/cinematique/1cinematique_loop
