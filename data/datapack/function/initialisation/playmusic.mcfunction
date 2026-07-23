@@ -1,1 +1,0 @@
-execute as @a[tag=startcinematique] run playsound minecraft:presentation.musique player @s ~ ~ ~
