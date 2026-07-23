@@ -16,7 +16,7 @@ schedule function datapack:initialisation/cinematique/1cinematique_loop 1t
 schedule function datapack:initialisation/cinematiquetitle/1title 2s
 
 schedule function datapack:initialisation/cinematique/2cinematique 10s
-schedule function datapack:initialisation/cinematiquetitle/3title 10s
+schedule function datapack:initialisation/cinematiquetitle/2title 10s
 
 schedule function datapack:initialisation/cinematique/3cinematique 20s
 schedule function datapack:initialisation/cinematiquetitle/3title 20s
