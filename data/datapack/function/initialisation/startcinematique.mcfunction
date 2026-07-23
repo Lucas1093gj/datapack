@@ -24,3 +24,5 @@ schedule function datapack:initialisation/cinematique/4cinematique 30s
 schedule function datapack:initialisation/cinematiquetitle/4title 30s
 
 schedule function datapack:initialisation/endcinematique 40s
+
+#test
